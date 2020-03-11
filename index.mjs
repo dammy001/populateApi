@@ -1,7 +1,11 @@
-const express = require('express')
+//const express = require('express')
+import express from 'express';
 const app = express()
-const bodyParser = require('body-parser')
-const cors = require('cors')
+
+import bodyParser from 'body-parser'
+import cors from 'cors';
+
+
 const port = 3000
 
 app.use(bodyParser.urlencoded({
