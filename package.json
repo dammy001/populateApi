@@ -1,10 +1,10 @@
 {
   "name": "populateapi",
   "version": "1.0.0",
-  "description": "rest api ",
-  "main": "index.mjs",
+  "description": "rest api for population",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --experimental-modules index.mjs",
+    "start": "nodemon --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "damilare anjorin",
@@ -13,9 +13,13 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.2"
   }
 }
